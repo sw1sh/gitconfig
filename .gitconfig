@@ -1,0 +1,10 @@
+[alias]
+  tree = log --date=relative --pretty=format:'%C(reset)%C(yellow)%h%C(auto)%d% C(reset)%s %C(green)(%ad) %C(bold blue)%an' --graph --all
+  up = pull --rebase
+  upm = pull --rebase origin master # ребейзит удалённый мастер в текущую ветку
+  put = push origin HEAD # пушит текущую ветку
+  co = checkout
+	st = status
+[user]
+	email = murzin.nikolay@gmail.com
+	name = Nikolay Murzin
