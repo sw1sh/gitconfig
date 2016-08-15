@@ -5,6 +5,18 @@
   put = push origin HEAD # пушит текущую ветку
   co = checkout
 	st = status
+  b = branch
 [user]
 	email = murzin.nikolay@gmail.com
 	name = Nikolay Murzin
+	signingkey = B9408C55
+[core]
+	editor = /usr/local/bin/vim
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[merge]
+	tool = opendiff
+[commit]
+	gpgsign = true
